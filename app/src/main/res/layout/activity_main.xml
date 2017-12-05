@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cristianjlp.menu_probest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mp1"
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:background="@drawable/cenidet">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mp1"
+        android:layout_marginTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="650px"
+            android:id="@+id/relativeLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btn_ej2"
+                android:layout_below="@+id/btn_ej2"
+                android:gravity="center"
+                android:hint="Media aritmetrica" />
+
+            <Button
+                android:id="@+id/btn_ej2"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/graf_pastel"
+                android:backgroundTint="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btn_ej1"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/grafic_bars"
+                android:backgroundTint="@color/colorAccent"
+                android:elegantTextHeight="true"
+                android:elevation="0dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btn_ej1"
+                android:layout_below="@+id/btn_ej1"
+                android:gravity="center"
+                android:hint="Medidas de dispersión relativa" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignEnd="@+id/textView1">
+
+            <Button
+                android:id="@+id/btn_ej3"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/graf_media"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btn_ej3"
+                android:layout_below="@+id/btn_ej3"
+                android:gravity="center"
+                android:hint="Pearson" />
+
+            <Button
+                android:id="@+id/btn_ej4"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/graf_media"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Sesgo"
+                android:layout_below="@+id/btn_ej4"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Ing. Cristian de Jesús López Pérez"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:lines="7" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

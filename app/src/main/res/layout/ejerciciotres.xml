@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="770px"
+        android:layout_alignParentStart="true">
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/myXYPlot"
+            androidPlot.graphAnchor="center"
+            androidPlot.graphHorizontalPositioning="absolute_from_center"
+            androidPlot.graphHorizontalPosition="0dp"
+            androidPlot.graphVerticalPositioning="absolute_from_center"
+            androidPlot.graphVerticalPosition="0dp"
+            androidPlot.domainLabel="Intervarlos"
+            androidPlot.rangeLabel="Frecuencia"
+            title="Graficar datos"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:padding="10dp"
+            android:paddingEnd="0dp"
+
+            android:textAlignment="inherit"
+
+            app:marginBottom="10dp"
+            app:marginLeft="20dp"
+            app:marginRight="10dp"
+            app:marginTop="10dp"
+
+            app:paddingBottom="10dp"
+            app:paddingLeft="2dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lvl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lvl1"
+        android:background="@android:drawable/editbox_dropdown_light_frame">
+
+        <TextView
+            android:id="@+id/prueba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado e y R"
+            android:gravity="center"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/tvintervalosx"
+            android:layout_width="1000px"
+            android:layout_height="60px"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:scrollbars="horizontal"
+            android:text="Intervalo"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tvfrecuencia"
+            android:layout_width="1000px"
+            android:layout_height="60px"
+            android:layout_alignStart="@+id/tvintervalosx"
+            android:layout_below="@+id/tvintervalosx"
+            android:layout_marginTop="9dp"
+            android:scrollbars="horizontal"
+            android:text="frecuencia"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvfrecuencia"
+            android:layout_marginTop="8dp"
+            android:text="Media Aritmétrica:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvfrecuencia"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:text="Intervalo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignTop="@+id/tvfrecuencia"
+            android:text="Frecuencia" />
+
+        <TextView
+            android:id="@+id/res_ma_x"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="______________" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:text="CoVarianza" />
+
+        <TextView
+            android:id="@+id/res_cv"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_alignStart="@+id/res_ma_x"
+            android:layout_below="@+id/res_ma_x"
+            android:text="______________" />
+
+        <TextView
+            android:id="@+id/res_ma_y"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/res_ma_x"
+            android:layout_alignBottom="@+id/res_ma_x"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/res_ma_x"
+            android:text="______________" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:text="Varianza" />
+
+        <TextView
+            android:id="@+id/tv_v_x"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/res_cv"
+            android:layout_below="@+id/res_cv"
+            android:text="______________" />
+
+        <TextView
+            android:id="@+id/tv_v_y"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_v_x"
+            android:layout_alignBottom="@+id/tv_v_x"
+            android:layout_alignStart="@+id/res_ma_y"
+            android:text="______________" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lvl1"
+        android:layout_width="match_parent"
+        android:layout_height="310px"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@android:drawable/zoom_plate">
+
+        <EditText
+            android:id="@+id/x"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Número"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textColor="@color/ap_white"
+            android:textColorHint="@color/off_white" />
+
+        <EditText
+            android:id="@+id/f"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/x"
+            android:layout_alignBottom="@+id/x"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Número"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textColor="@color/ap_white"
+            android:textColorHint="@color/off_white" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/x"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="9dp"
+            android:text="Intervalo"
+            android:textColor="@color/ap_white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="Frecuencia"
+            android:textColor="@color/ap_white" />
+
+        <Button
+            android:id="@+id/add_f"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:background="@drawable/plus_box"
+            android:onClick="add_values_i"
+            android:layout_alignTop="@+id/limpiar_graf"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/cal"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:background="@drawable/chart_areaspline"
+            android:enabled="false"
+            android:onClick="cal"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/limpiar_graf" />
+
+        <Button
+            android:id="@+id/limpiar_graf"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:background="@drawable/delete_empty"
+            android:onClick="limpiar_graf"
+            android:textSize="30px"
+            android:layout_alignTop="@+id/cal"
+            android:layout_toStartOf="@+id/add_f" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="La recta es:"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
